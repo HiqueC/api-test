@@ -8,7 +8,7 @@ var zahirr = db.get("supra");
 	console.log('')
 }
 var fs = require('fs');
-var creatorList = ['@supra'];
+var creatorList = ['@Fluxo'];
 var creator = creatorList[Math.floor(Math.random() * creatorList.length)];
 
 var ytdl = require('ytdl-core');
@@ -62,7 +62,7 @@ loghandler = {
         criador: `${creator}`,
         code: 406,
         mensagem: 'parâmetros de entrada de apikey',
-        getApikey: 'Não tem apikey? Chame e compre sua chave por apenas 10 R$ wa.me/5593991919748'
+        getApikey: 'Não tem apikey? Chame e compre sua chave por apenas 10 R$ wa.me/5561994188919'
     },
     notkey: {
         status: false,
@@ -134,7 +134,7 @@ loghandler = {
         status: false,
         criador: `${creator}`,
         code: 406,
-        mensagem: 'apikey invalida, Não tem apikey? Chame e compre sua chave por apenas 10 R$ wa.me/5593991919748'
+        mensagem: 'apikey invalida, Não tem apikey? Chame e compre sua chave por apenas 10 R$ wa.me/5561994188919'
     },
     invalidlink: {
         status: false,
@@ -158,7 +158,7 @@ loghandler = {
         mensagem: 'talvez esteja sendo consertado'
     }
 }
-const listkey = ["supraz", "yuna", "lhannaBot"];
+const listkey = ["hiquec", "fluxxbot", "thbec"];
 var len = 15
         var arr = '123456789abcdefghijklmnopqrstuvwxyz'
         var random = '';
