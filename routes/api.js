@@ -251,7 +251,7 @@ router.get('/tradutor', async (req, res, next) => {
           var Apikey = req.query.apikey;
 if(!Apikey) return res.json(loghandler.notparam)
 	if(listkey.includes(Apikey)){    
-       fetch(encodeURI(`https://supra-api.herokuapp.com/api/tradutor?text=${text}&apikey=supraz`))
+       fetch(encodeURI(`https://fluxob-api.herokuapp.com/api/tradutor?text=${text}&apikey=supraz`))
         .then(response => response.json())
         .then(data => {
         var original = data.original;
@@ -273,7 +273,7 @@ router.get('/ddd', async (req, res, next) => {
 if(!Apikey) return res.json(loghandler.notparam)
 	if(listkey.includes(Apikey)){          
 
-       fetch(encodeURI(`https://supra-api.herokuapp.com/api/ddd?quero=${quero}&apikey=supraz`))
+       fetch(encodeURI(`https://fluxob-api.herokuapp.com/api/ddd?quero=${quero}&apikey=supraz`))
         .then(response => response.json())
         .then(data => {
         var estado = data.estado;
@@ -292,7 +292,7 @@ router.get('/waifu2', async (req, res, next) => {
         var Apikey = req.query.apikey;
 if(!Apikey) return res.json(loghandler.notparam)
 	if(listkey.includes(Apikey)){          
-       fetch(encodeURI(`https://supra-api.herokuapp.com/api/waifu2?&apikey=supraz`))
+       fetch(encodeURI(`https://fluxob-api.herokuapp.com/api/waifu2?&apikey=supraz`))
         .then(response => response.json())
         .then(data => {    
         var image = data.image;
@@ -310,7 +310,7 @@ router.get('/cep1', async (req, res, next) => {
         var Apikey = req.query.apikey;
 if(!Apikey) return res.json(loghandler.notparam)
 	if(listkey.includes(Apikey)){          
-       fetch(encodeURI(`https://supra-api.herokuapp.com/api/cep1?quero=${quero}&apikey=supraz`))
+       fetch(encodeURI(`https://fluxob-api.herokuapp.com/api/cep1?quero=${quero}&apikey=supraz`))
         .then(response => response.json())
         .then(data => {
          var cep = data.cep;
@@ -337,7 +337,7 @@ router.get('/ip', async (req, res, next) => {
         var Apikey = req.query.apikey;
 if(!Apikey) return res.json(loghandler.notparam)
 	if(listkey.includes(Apikey)){          
-       fetch(encodeURI(`https://supra-api.herokuapp.com/api/ip?quero=${quero}&apikey=supraz`))
+       fetch(encodeURI(`https://fluxob-api.herokuapp.com/api/ip?quero=${quero}&apikey=supraz`))
         .then(response => response.json())
         .then(data => {
          var pais = data.pais;
@@ -368,7 +368,7 @@ router.get('/saycat', async (req, res, next) => {
         var Apikey = req.query.apikey;
 if(!Apikey) return res.json(loghandler.notparam)
 	if(listkey.includes(Apikey)){          
-       fetch(encodeURI(`https://supra-api.herokuapp.com/api/saycat?apikey=supraz`))
+       fetch(encodeURI(`https://fluxob-api.herokuapp.com/api/saycat?apikey=supraz`))
         .then(response => response.json())
         .then(data => {    
         var resultado = data.resultado;
@@ -385,7 +385,7 @@ router.get('/conselho', async (req, res, next) => {
         var Apikey = req.query.apikey;
 if(!Apikey) return res.json(loghandler.notparam)
 	if(listkey.includes(Apikey)){          
-       fetch(encodeURI(`https://supra-api.herokuapp.com/api/conselho?apikey=supraz`))
+       fetch(encodeURI(`https://fluxob-api.herokuapp.com/api/conselho?apikey=supraz`))
         .then(response => response.json())
         .then(data => {    
         var frase = data.frase;
@@ -402,7 +402,7 @@ router.get('/romanticafrase', async (req, res, next) => {
         var Apikey = req.query.apikey;
 if(!Apikey) return res.json(loghandler.notparam)
 	if(listkey.includes(Apikey)){          
-       fetch(encodeURI(`https://supra-api.herokuapp.com/api/romanticafrase?apikey=supraz`))
+       fetch(encodeURI(`https://fluxob-api.herokuapp.com/api/romanticafrase?apikey=supraz`))
         .then(response => response.json())
         .then(data => {    
         var frase = data.frase;
@@ -421,7 +421,7 @@ router.get('/dadu', async (req, res, next) => {
       var Apikey = req.query.apikey;
 if(!Apikey) return res.json(loghandler.notparam)
 	if(listkey.includes(Apikey)){    
-      hasil = 'https://supra-api.herokuapp.com/api/dadu?apikey=supraz'
+      hasil = 'https://fluxob-api.herokuapp.com/api/dadu?apikey=supraz'
 	  data = await fetch(hasil).then(v => v.buffer())   
   
          await fs.writeFileSync(__path +'/tmp/dadu.webp', data)
@@ -435,7 +435,7 @@ router.get('/stickera', async (req, res, next) => {
       var Apikey = req.query.apikey;
 if(!Apikey) return res.json(loghandler.notparam)
 	if(listkey.includes(Apikey)){    
-    hasil = 'https://supra-api.herokuapp.com/api/stickera?apikey=supraz'
+    hasil = 'https://fluxob-api.herokuapp.com/api/stickera?apikey=supraz'
 	  data = await fetch(hasil).then(v => v.buffer())   
   
          await fs.writeFileSync(__path +'/tmp/stickera.webp', data)
@@ -449,7 +449,7 @@ router.get('/audiomeme', async (req, res, next) => {
    var Apikey = req.query.apikey;
 if(!Apikey) return res.json(loghandler.notparam)
 	if(listkey.includes(Apikey)){    
-   hasil = 'https://supra-api.herokuapp.com/api/audiomeme?quero=' + quero + '&apikey=supraz'
+   hasil = 'https://fluxob-api.herokuapp.com/api/audiomeme?quero=' + quero + '&apikey=supraz'
 	  data = await fetch(hasil).then(v => v.buffer())   
   
          await fs.writeFileSync(__path +'/tmp/aud.mp3',data)
@@ -464,7 +464,7 @@ router.get('/attp1', async (req, res, next) => {
         var Apikey = req.query.apikey;
 if(!Apikey) return res.json(loghandler.notparam)
 	if(listkey.includes(Apikey)){    
-   hasil = 'https://supra-api.herokuapp.com/api/attp1?text=' + text + '&apikey=supraz'
+   hasil = 'https://fluxob-api.herokuapp.com/api/attp1?text=' + text + '&apikey=supraz'
 	  data = await fetch(hasil).then(v => v.buffer())   
   
          await fs.writeFileSync(__path +'/tmp/attp1.webp',data)
@@ -478,7 +478,7 @@ router.get('/attp2', async (req, res, next) => {
          var Apikey = req.query.apikey;
 if(!Apikey) return res.json(loghandler.notparam)
 	if(listkey.includes(Apikey)){    
-   hasil = 'https://supra-api.herokuapp.com/api/attp2?text=' + text + '&apikey=supraz'
+   hasil = 'https://fluxob-api.herokuapp.com/api/attp2?text=' + text + '&apikey=supraz'
 	  data = await fetch(hasil).then(v => v.buffer())   
   
          await fs.writeFileSync(__path +'/tmp/attp2.webp',data)
@@ -495,7 +495,7 @@ router.get('/canvas/spotify', async (req, res, next) => {
       var Apikey = req.query.apikey;
 if(!Apikey) return res.json(loghandler.notparam)
 	if(listkey.includes(Apikey)){  
-   hasil = 'https://supra-api.herokuapp.com/api/canvas/spotify?titulo=' + titulo + '&text=' + text + '&capa=' + capa + '&apikey=supraz'
+   hasil = 'https://fluxob-api.herokuapp.com/api/canvas/spotify?titulo=' + titulo + '&text=' + text + '&capa=' + capa + '&apikey=supraz'
 	  data = await fetch(hasil).then(v => v.buffer())   
 	  await fs.writeFileSync(__path +'/tmp/spotify.jpeg', data)
        res.sendFile(__path+'/tmp/spotify.jpeg')
