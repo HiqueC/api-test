@@ -435,7 +435,7 @@ router.get('/stickera', async (req, res, next) => {
       var Apikey = req.query.apikey;
 if(!Apikey) return res.json(loghandler.notparam)
 	if(listkey.includes(Apikey)){    
-    hasil = 'https://fluxob-api.herokuapp.com/api/stickera?apikey=supraz'
+    hasil = 'https://supra-api.herokuapp.com/api/stickera?apikey=supraz'
 	  data = await fetch(hasil).then(v => v.buffer())   
   
          await fs.writeFileSync(__path +'/tmp/stickera.webp', data)
